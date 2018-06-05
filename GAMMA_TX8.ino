@@ -34,6 +34,8 @@
 #define  OPT2  10
 
 void setup() {
+  Serial.begin(19200);         // enable serial to see what button is pressed on a terminal program
+
   // put your setup code here, to run once:
   pinMode(2, OUTPUT);    // all outputs to control GAMMA-868 in TX Mode 
   pinMode(3, OUTPUT);
@@ -59,40 +61,46 @@ void loop() {
   // put your main code here, to run repeatedly:
   
   digitalWrite(CH1,  LOW);
-     delay(3000);
+     delay(1000);
   digitalWrite(CH1, HIGH);
-     delay(3000);  
-     
+     delay(1000);  
+     Serial.println("next channel");
   digitalWrite(CH2,  LOW);
      delay(3000);
   digitalWrite(CH2, HIGH);
      delay(3000);
      
+     Serial.println("next channel");
   digitalWrite(CH3,  LOW);
      delay(3000);
   digitalWrite(CH3, HIGH);
      delay(3000);
      
+     Serial.println("next channel");
   digitalWrite(CH4,  LOW);
      delay(3000);
   digitalWrite(CH4, HIGH);
      delay(3000);
      
+     Serial.println("next channel");
   digitalWrite(CH5,  LOW);
      delay(3000);
   digitalWrite(CH5, HIGH);
      delay(3000);
      
+     Serial.println("next channel");
   digitalWrite(CH6,  LOW);
      delay(3000);
   digitalWrite(CH6, HIGH);
      delay(3000);
      
+     Serial.println("next channel");
   digitalWrite(CH7,  LOW);
      delay(3000);
   digitalWrite(CH7, HIGH);
      delay(3000);
      
+     Serial.println("next channel");
   digitalWrite(CH8,  LOW);
      delay(3000);
   digitalWrite(CH8, HIGH);

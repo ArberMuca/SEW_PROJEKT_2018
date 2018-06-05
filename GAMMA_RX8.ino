@@ -177,5 +177,5 @@ else  {
       bitClear(Inputs18, 7);
     }  
   }
-
+Serial.println( Inputs18);
 }
