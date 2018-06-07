@@ -35,6 +35,7 @@ void loop() {
   if ((digitalRead(OP1)) == HIGH) {
     if (StateChange == 0) {              // if output is high and has changed since last read then
       Serial.println("Output 1 HIGH");   // print text to serial terminal
+      Serial.println("OP1 gelesen");
       bitSet(Inputs18, 0);               // change know state flag
     }
   }
@@ -51,6 +52,7 @@ void loop() {
 
   if ((digitalRead(OP2)) == HIGH) {
     if (StateChange == 0) {
+      Serial.println("OP2 gelesen");
       Serial.println("Output 2 HIGH");
       bitSet(Inputs18, 1);
     }
@@ -58,6 +60,8 @@ void loop() {
   else  {
     if (StateChange == 1) {
       Serial.println("Output 2 LOW");
+      Serial.println("OP1 gelesen");
+
       bitClear(Inputs18, 1);
     }
   }
@@ -69,6 +73,8 @@ void loop() {
   if ((digitalRead(OP3)) == HIGH) {
     if (StateChange == 0) {
       Serial.println("Output 3 HIGH");
+      Serial.println("OP3 gelesen");
+
       bitSet(Inputs18, 2);
     }
   }
@@ -86,6 +92,8 @@ void loop() {
   if ((digitalRead(OP4)) == HIGH) {
     if (StateChange == 0) {
       Serial.println("Output 4 HIGH");
+      Serial.println("OP4 gelesen");
+
       bitSet(Inputs18, 3);
     }
   }
@@ -101,6 +109,8 @@ void loop() {
   if ((digitalRead(OP5)) == HIGH) {
     if (StateChange == 0) {
       Serial.println("Output 5 HIGH");
+      Serial.println("OP5 gelesen");
+
       bitSet(Inputs18, 4);
     }
   }
@@ -116,6 +126,8 @@ void loop() {
   if ((digitalRead(OP6)) == HIGH) {
     if (StateChange == 0) {
       Serial.println("Output 6 HIGH");
+      Serial.println("OP6 gelesen");
+
       bitSet(Inputs18, 5);
     }
   }
@@ -131,6 +143,9 @@ void loop() {
   if ((digitalRead(OP7)) == HIGH) {
     if (StateChange == 0) {
       Serial.println("Output 7 HIGH");
+      Serial.println("OP8 gelesen");
+
+
       bitSet(Inputs18, 6);
     }
   }
